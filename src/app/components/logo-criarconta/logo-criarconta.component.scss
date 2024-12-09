@@ -1,0 +1,22 @@
+section {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    &::after {
+        content: '';
+        background-image: url('/images/criarconta.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        filter: blur(6px);
+        z-index: -1;
+    }
+}

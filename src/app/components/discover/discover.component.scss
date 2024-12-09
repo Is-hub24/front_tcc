@@ -1,0 +1,45 @@
+section {
+    background-image: url("../../../assets/discover/fundo2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    div {
+        background-color: #363F30;
+        max-width: 643px;
+        margin: 0 30px;
+        padding: 40px 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h3 {
+        color: #e5e0d8;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 43px;
+    }
+
+    p {
+        color: #c1b59f;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    button {
+        background-color: #e5e0d8;
+        padding: 15px 52px;
+        color: #4f493f;
+        font-size: 16px;
+        font-weight: 700;
+        align-self: flex-start;
+        margin-top: 20px;
+    }
+}

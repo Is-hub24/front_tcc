@@ -1,0 +1,24 @@
+<header class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#">
+        <h2 class="title">Cycle</h2>
+    </a>
+    <nav class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <nav class="nav-itens navbar-nav my-3 my-md-0">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Categorias</a>
+            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#">Contato</a>
+        </nav>
+    </nav>
+    <nav class="nav-icons my-4 my-md-0">
+        <a [routerLink]="['/login']"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a class="cart-area" [routerLink]="['/cart']" href="#"><i class="fa-solid fa-cart-shopping"></i><span *ngIf="length > 0" class="cart-number">{{length}}</span></a>
+    </nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</header>
+<section>
+</section>

@@ -1,0 +1,22 @@
+<section>
+    <h3 class="section-title">Mais Polulares</h3>
+    <ul>
+        <li *ngFor="let produto of produtos">
+            <img [src]="'data:' + produto.image.fileType + ';base64,' + produto.image.fileData" [alt]="produto.nome">
+            <div class="info">
+                <h3>{{produto.nome}}</h3>
+                <p class="description">{{produto.descricao}}</p>
+                <p class="price">{{produto.preco | currency: "BRL"}}</p>
+            </div>
+            <div (click)="viewProduct(produto.id_produtos)" class="hover">
+                <button class="addtocart">Adicionar ao Carrinho</button>
+                <div class="add">
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i> Share</a>
+                    <a href="#"><i class="fa-solid fa-code-compare"></i> Compare</a>
+                    <a href="#"><i class="fa-solid fa-heart"></i> Like</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <button>Mostrar Mais</button>
+</section>

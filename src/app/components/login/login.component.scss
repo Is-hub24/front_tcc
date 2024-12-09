@@ -1,0 +1,82 @@
+main {
+    background-image: url("../../../assets/discover/ocean1.png");
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 500px;
+
+    main .image-area {
+        flex: 1; /* Garante que a área ocupe espaço suficiente */
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente dentro da área */
+        align-items: center; /* Centraliza verticalmente dentro da área */
+      
+
+    .login-area {
+        width: 503px;
+        // background-color: plum;
+        margin: 10px 20px;
+        
+        .titulo {
+            font-size: 25px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                .input {
+                    height: 60px;
+                    background-color: #fff;
+                    border: 1px solid #9F9F9F;
+                    padding: 0 20px;
+                    border-radius: 10px;
+                    outline: none;
+
+                    &:focus {
+                        border: 2px solid #000;
+                    }
+                    
+                    &::placeholder {
+                        color: #9F9F9F;
+                    }
+                }
+            }
+
+            a {
+                color: #9F9F9F;
+                align-self: flex-end;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+
+            .botoes {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p {
+                    text-align: center;
+                    color: #9F9F9F;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                
+                .botao {
+                    height: 60px;
+                    background-color: #363F30;
+                    color: #F9F1E7;
+                    border: 1px solid #9F9F9F;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+footer {
+    padding: 35px 55px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    .info {
+            @media (max-width: 900px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+        }
+        
+        .area1 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                color: #000;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #9f9f9f;
+            }
+        }
+
+        .area2 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h4 {
+                font-size: 16px;
+                font-family: 500;
+                color: #9f9f9f;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: #000;
+            }
+
+            @media (max-width: 900px) {
+                gap: 15px;
+            }
+        }
+
+        .area3 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @media (max-width: 900px) {
+                gap: 15px;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-family: 500;
+                color: #9f9f9f;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: #000;
+            }
+        }
+
+        .area4 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @media (max-width: 900px) {
+                gap: 15px;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-family: 500;
+                color: #9f9f9f;
+            }
+
+            .newsletter {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    width: 220px;
+                    outline: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                input::placeholder {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #9f9f9f;
+                }
+                
+                button {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .separation {
+        height: 1px;
+        background-color: #d9d9d9;
+    }
+
+    .copyright {
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+    }
+}

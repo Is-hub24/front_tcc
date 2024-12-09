@@ -1,0 +1,109 @@
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 40px;
+
+    .section-title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px solid #363F30;
+        color: #363F30;
+        padding: 15px 60px;
+        align-self: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    ul li {
+        width: 250px;
+        background-color: #ededed;
+        cursor: pointer;
+        position: relative;
+        // flex-grow: 1;
+    }
+
+    ul li:hover .hover {
+        opacity: 1;
+    }
+    
+    ul li .hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #3a3a3ab6;
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .addtocart {
+        background-color: #e5e0d8;
+        color: #725c3a;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border: none;
+    }
+
+    .add {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .add a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul li h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #3a3a3a;
+    }
+
+    ul li .description {
+        font-size: 16px;
+        font-weight: 500;
+        color: #898989;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
+    ul li .price {
+        font-size: 20px;
+        font-weight: 600;
+        color: #3a3a3a;
+    }
+
+    ul li .info {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 20px;
+    }
+
+    ul li img {
+        width: 100%;
+    }
+}

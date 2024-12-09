@@ -1,0 +1,16 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+    background-image: url('/images/316caf11b37de98748e992660d29a8fb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+}

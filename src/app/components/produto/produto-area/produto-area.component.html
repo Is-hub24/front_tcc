@@ -1,0 +1,42 @@
+<div class="container my-5">
+    <div class="row g-4">
+      <!-- Imagem do produto -->
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <img [src]="'data:' + produto.image.fileType + ';base64,' + produto.image.fileData" alt="Imagem do Produto" class="img-fluid rounded">
+      </div>
+
+      <!-- Informações do produto -->
+      <div class="col-md-4">
+        <h2 class="product-title">{{produto?.nome}}</h2>
+        <div class="ratings mb-3">
+          <span class="text-warning">★ ★ ★ ★ ☆</span>
+          <small class="text-muted">(123 avaliações)</small>
+        </div>
+        <p class="product-description">
+          {{produto?.descricao}}
+        </p>
+      </div>
+
+      <!-- Preço e opções de compra -->
+      <div class="col-md-4 text-center text-md-start">
+        <h3 class="product-price text-success">{{produto?.preco ?? 0 | currency: "BRL"}}</h3>
+        <p class="text-muted">Disponibilidade: <strong *ngIf="quantity > 0">Em estoque</strong></p>
+        <!-- Select de quantidade -->
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantidade</label>
+          <select [(ngModel)]="quantity" id="quantity" class="form-select w-50">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <!-- Botões -->
+        <div class="d-flex flex-column gap-2">
+          <button class="btn btn-primary btn-lg" (click)="addProductToCart(produto.id_produtos)">Adicionar ao Carrinho</button>
+          <button class="btn btn-success btn-lg">Comprar Agora</button>
+        </div>
+      </div>
+    </div>
+  </div>
